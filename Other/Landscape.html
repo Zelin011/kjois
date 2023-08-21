@@ -1,67 +1,59 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Landscape Design</title>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css'>
-  <link rel="stylesheet" href="./Landscape.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML, CSS, and JS - Expanding Flex Cards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div class="general-container">
-  <input class="radio" type="radio" name="card" id="card-1" checked />
-  <label class="content" for="card-1">
-    <span class="icon">
-      <img src="./images/logo (Custom) (Custom).png" alt="Sun Image">
-    </span>
-    <h3 class="card-title">
-      Master Plan
-      <span class="subtitle">@kjois</span>
-    </h3>
-  </label>
-  <input class="radio" type="radio" name="card" id="card-2" />
-  <label class="content" for="card-2">
-    <span class="icon">
-      <img src="./images/logo (Custom) (Custom).png" alt="Sun Image">
-    </span>
-    <h3 class="card-title">
-      Site-1
-      <span class="subtitle">@kjois</span>
-    </h3>
-  </label>
-  <input class="radio" type="radio" name="card" id="card-3" />
-  <label class="content" for="card-3">
-    <span class="icon">
-      <img src="./images/logo (Custom) (Custom).png" alt="Sun Image">
-    </span>
-    <h3 class="card-title">
-      Site-2
-      <span class="subtitle">@kjois</span>
-    </h3>
-  </label>
-  <input class="radio" type="radio" name="card" id="card-4" />
-  <label class="content" for="card-4">
-    <span class="icon">
-      <img src="./images/logo (Custom) (Custom).png" alt="Sun Image">
-    </span>
-    <h3 class="card-title">
-      Site-1
-      <span class="subtitle">@kjois</span>
-    </h3>
-  </label>
-  <input class="radio" type="radio" name="card" id="card-5" />
-  <label class="content" for="card-5">
-    <span class="icon">
-      <img src="./images/logo (Custom) (Custom).png" alt="Sun Image">
-    </span>
-    <h3 class="card-title">
-      Site-2
-      <span class="subtitle">@kjois</span>
-    </h3>
-  </label>
-</div>
-<!-- partial -->
-  
+    <section>
+        <h1 class="text-center"><b>Creating an Expanding Flex Cards using HTML and CSS</b></h1>
+        <hr width="50px">
+    <!-- Flex Cards Container -->
+        <div class="expanding-flex-cards">
+            <div class="expanding-flex-cards-item active">
+                <img src="./images/Landscape masterplan.png" alt="" class="expanding-flex-cards-item-img">
+                <div class="expanding-flex-cards-item-footer">
+                    <div class="expanding-flex-cards-icon">1</div>
+                    <div class="expanding-flex-cards-title">Card Item 1</div>
+                </div>
+            </div>
+            <div class="expanding-flex-cards-item">
+                <img src="./images/site1.png" alt="" class="expanding-flex-cards-item-img">
+                <div class="expanding-flex-cards-item-footer">
+                    <div class="expanding-flex-cards-icon">2</div>
+                    <div class="expanding-flex-cards-title">Card Item 2</div>
+                </div>
+            </div>
+            <div class="expanding-flex-cards-item">
+                <img src="./images/site2.png" alt="" class="expanding-flex-cards-item-img">
+                <div class="expanding-flex-cards-item-footer">
+                    <div class="expanding-flex-cards-icon">3</div>
+                    <div class="expanding-flex-cards-title">Card Item 3</div>
+                </div>
+            </div>
+            <div class="expanding-flex-cards-item">
+                <img src="./images/l1.png" alt="" class="expanding-flex-cards-item-img">
+                <div class="expanding-flex-cards-item-footer">
+                    <div class="expanding-flex-cards-icon">4</div>
+                    <div class="expanding-flex-cards-title">Card Item 4</div>
+                </div>
+            </div>
+            <div class="expanding-flex-cards-item">
+                <img src="./images/l2.png" alt="" class="expanding-flex-cards-item-img">
+                <div class="expanding-flex-cards-item-footer">
+                    <div class="expanding-flex-cards-icon">5</div>
+                    <div class="expanding-flex-cards-title">Card Item 5</div>
+                </div>
+            </div>
+        </div>
+    <!-- End of Flex Cards Container -->
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
