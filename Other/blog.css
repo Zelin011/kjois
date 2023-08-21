@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* You can change the font family as needed */
+}
+
+body {
+    background-color: #f0f0f0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #00ffff; /* Set the header background color */
+    font-style: oblique;
+    font-size: 30px;
+    color: #000000; /* Set the header text color */
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 8%;
+    border: 10px solid #c0c0c0; /* Adding the decorative border around the page */
+    background-color: #fff; /* Set the container background color */
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    margin-top: 30px;
+}
+
+.gallery a {
+    display: block; /* Ensures the image links occupy the entire grid cell */
+    text-decoration: none; /* Removes underline from image links */
+}
+
+.gallery img {
+    width: 100%;
+    border: 2px solid #000; /* Adding a border around each image in the gallery */
+    box-shadow: 0 40px 80px rgba(255, 0, 0, 0.2); /* Adding a shadow around each image */
+}
