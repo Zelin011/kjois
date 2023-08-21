@@ -1,7 +1,7 @@
 :root{
     --mynerve-font:'Mynerve', cursive;
     --light-color:#f9f9f9;
-    --dark-color:#20262E;
+    --dark-color:#16e3f2;
 }
 
 body,
@@ -39,7 +39,7 @@ img{
 }
 
 .expanding-flex-cards>.expanding-flex-cards-item{
-    height: 60vh;
+    height: 75vh;
     width: 23px;
     position: relative;
     background: transparent;
@@ -53,7 +53,7 @@ img{
     transition: all .3s ease;
 }
 .expanding-flex-cards>.expanding-flex-cards-item.active {
-    width: 800px;
+    width: 1100px;
 }
 .expanding-flex-cards>.expanding-flex-cards-item:not(.active) {
     cursor: pointer;
@@ -121,3 +121,20 @@ img{
         opacity: 1;
     }
 }
+/* ... (your existing CSS code) ... */
+
+/* Centering the flex cards on the screen */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the section take the full viewport height */
+    background-color: var(--dark-color);
+}
+
+.expanding-flex-cards {
+    display: flex;
+    align-items: center;
+}
+
+/* ... (rest of your CSS code) ... */
