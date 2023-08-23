@@ -1,15 +1,77 @@
-:root{
-
-}
-
-body,
-html{
+body, html {
     height: 100%;
     width: 100%;
+    overflow-y: scroll; /* Enable vertical scrolling */
 }
+
+/* Rest of your CSS styles */
+
+/* Styling the scrollbar */
+body::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent; /* Track background color */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #888; /* Thumb color */
+    border-radius: 4px; /* Rounded corners on the thumb */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Thumb color on hover */
+}
+
+.text-box {
+    margin: 10px auto;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: auto;
+    }
 h1{
     font-family: var(--mynerve-font)
 }
+
+h2 {
+    font-family: var(--mynerve-font);
+    margin-bottom: 5px; /* Add margin to the bottom */
+}
+
+h3 {
+    margin-top: 5px; /* Add margin to the top */
+    margin-bottom: 10px; /* Add margin to the bottom */
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline; /* Add underline to h */
+}
+
+/* Rest of your styles */
+
+.Paragraph-1,
+.Paragraph-2,
+.Paragraph-3,
+.Paragraph-4 {
+    padding: 1px;
+    font-size: 18px;
+    text-align: justify;
+    text-justify: auto;
+    color: #333;
+    /* Position the paragraph */
+    top: 20px;
+    width: auto; /* Let the width be auto */
+    margin-bottom: 10px
+}
+
+
+.box {
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+    border-radius: 10px; /* Rounded corners */
+}
+
 .text-center{
     text-align: center;
 }
@@ -23,7 +85,6 @@ body{
             linear-gradient(to top right, rgb(12, 245, 225), transparent);
         background-blend-mode: screen;
     }
-}
 img{
     width: 600px;
 }
@@ -135,5 +196,26 @@ section {
     display: flex;
     align-items: center;
 }
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .text-box {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
 
-/* ... (rest of your CSS code) ... */
+/* For screens between 768px and 1200px */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .text-box {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+/* For screens larger than 1200px */
+@media (min-width: 1200px) {
+    .text-box {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
