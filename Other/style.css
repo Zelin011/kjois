@@ -37,6 +37,9 @@ h1{
 h2 {
     font-family: var(--mynerve-font);
     margin-bottom: 5px; /* Add margin to the bottom */
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 h3 {
@@ -81,8 +84,8 @@ html{
 body{
         background:
             linear-gradient(rgb(215, 209, 209), transparent),
-            linear-gradient(to top left, rgb(44, 207, 196), transparent),
-            linear-gradient(to top right, rgb(12, 245, 225), transparent);
+            linear-gradient(to top left, rgb(42, 177, 168), transparent),
+            linear-gradient(to top right, rgb(0, 234, 214), transparent);
         background-blend-mode: screen;
     }
 img{
@@ -201,6 +204,7 @@ section {
     .text-box {
         margin-left: 20px;
         margin-right: 20px;
+        text-align: justify;
     }
 }
 
@@ -209,6 +213,7 @@ section {
     .text-box {
         margin-left: 50px;
         margin-right: 50px;
+        text-align: justify;
     }
 }
 
@@ -217,5 +222,6 @@ section {
     .text-box {
         margin-left: 100px;
         margin-right: 100px;
+        text-align: justify;
     }
 }
