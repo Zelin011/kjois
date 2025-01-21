@@ -89,13 +89,6 @@
 
         </ul>
 
-
-
-        <p class="copyright-text">
-          Copyright 2022 © Wren - Personal Blog Template.
-          Developed by codewithsadee
-        </p>
-
       </nav>
 
       <a href="#" class="btn btn-primary">Write Your Message</a>
@@ -134,18 +127,6 @@
               I love exploring innovative ideas and finding ways to make buildings and spaces more functional, beautiful, and eco-friendly.
             </p>
 
-            <div class="input-wrapper">
-
-              <input type="email" name="email_address" placeholder="Type your Message" required
-                class="input-field" autocomplete="off">
-
-              <button class="btn btn-primary">
-                <span class="span">Send</span>
-
-                <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-              </button>
-
-            </div>
 
           </div>
 
@@ -730,7 +711,12 @@
 
             <p class="footer-list-title">Contact</p>
 
+            <form action="https://api.web3forms.com/submit" method="POST">
 
+              <!-- Replace with your Access Key -->
+              <input type="hidden" name="access_key" value="c90ed1bd-41f3-4b05-9af5-e794ecead25f">
+
+              
             <div class="input-wrapper">
               <input type="text" name="name" placeholder="Your name" required class="input-field" autocomplete="off">
 
@@ -750,12 +736,13 @@
               <ion-icon name="logo-ionic" aria-hidden="true"></ion-icon>
             </div>
 
-            <a href="#" class="btn btn-primary">
+            <button type="submit" class="btn btn-primary">
               <span class="span">Send</span>
 
               <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
-            </a>
+            </button>
 
+            </form>
           </div>
 
         </div>
