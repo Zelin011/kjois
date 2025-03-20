@@ -111,31 +111,3 @@ window.addEventListener("resize", function () {
 
   moveSliderItem();
 });
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const sliderContainer = document.querySelector("[data-slider-container]");
-    const prevButton = document.querySelector("[data-slider-prev]");
-    const nextButton = document.querySelector("[data-slider-next]");
-    const sliderItems = document.querySelectorAll(".slider-item");
-    const itemWidth = sliderItems[0].offsetWidth;
-    let currentPosition = 0;
-
-    function updateSliderPosition() {
-      sliderContainer.style.transform = `translateX(-${currentPosition * itemWidth}px)`;
-    }
-
-    nextButton.addEventListener("click", () => {
-      currentPosition = (currentPosition + 1) % sliderItems.length;
-      updateSliderPosition();
-    });
-
-    prevButton.addEventListener("click", () => {
-      currentPosition = (currentPosition - 1 + sliderItems.length) % sliderItems.length;
-      updateSliderPosition();
-    });
-
-    // Set the initial slider position
-    updateSliderPosition();
-  });
-</script>
